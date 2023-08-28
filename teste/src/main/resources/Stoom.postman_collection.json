@@ -16,11 +16,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/categories/",
+							"raw": "{{stoom_url}}/api/categories/",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"categories",
@@ -46,11 +45,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/categories/",
+							"raw": "{{stoom_url}}/api/categories/",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"categories",
@@ -76,11 +74,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/categories/",
+							"raw": "{{stoom_url}}/api/categories/",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"categories",
@@ -97,11 +94,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/categories/1",
+							"raw": "{{stoom_url}}/api/categories/1",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"categories",
@@ -118,11 +114,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/categories/2",
+							"raw": "{{stoom_url}}/api/categories/2",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"categories",
@@ -139,12 +134,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/categories/?active=true",
-							"protocol": "http",
+							"raw": "{{stoom_url}}/api/categories/?active=true",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"categories",
@@ -173,12 +166,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/brands/",
-							"protocol": "http",
+							"raw": "{{stoom_url}}/api/brands/",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"brands",
@@ -196,7 +187,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "\n    {\n        \"name\": \"Category Exemple\",\n        \"description\": \"shirts exemple\",\n        \"active\": true\n    }\n",
+							"raw": "    {\n        \"name\": \"T-SHIRT\",\n        \"description\": \"TSHIRT PP\",\n        \"active\": true\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -204,14 +195,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/categories/",
+							"raw": "{{stoom_url}}/api/brands/",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
-								"categories",
+								"brands",
 								""
 							]
 						},
@@ -226,7 +216,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 1,\n    \"name\": \"Category Exemple\",\n    \"description\": \"shirts exemple 2\",\n    \"active\": false\n}",
+							"raw": "    {\n        \"id\":1,\n        \"name\": \"T-SHIRTS\",\n        \"description\": \"TSHIRT PP\",\n        \"active\": true\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -234,14 +224,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/categories/",
+							"raw": "{{stoom_url}}/api/brands/",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
-								"categories",
+								"brands",
 								""
 							]
 						},
@@ -255,15 +244,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/categories/1",
+							"raw": "{{stoom_url}}/api/brands/7",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
-								"categories",
-								"1"
+								"brands",
+								"7"
 							]
 						},
 						"description": "Deleta uma marca"
@@ -276,11 +264,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/brands/2",
+							"raw": "{{stoom_url}}/api/brands/2",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"brands",
@@ -297,21 +284,19 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/categories/?active=true",
-							"protocol": "http",
+							"raw": "{{stoom_url}}/api/brands/?active=false",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
-								"categories",
+								"brands",
 								""
 							],
 							"query": [
 								{
 									"key": "active",
-									"value": "true"
+									"value": "false"
 								}
 							]
 						},
@@ -331,12 +316,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/products/",
-							"protocol": "http",
+							"raw": "{{stoom_url}}/api/products/",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"products",
@@ -362,12 +345,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/products/",
-							"protocol": "http",
+							"raw": "{{stoom_url}}/api/products/",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"products",
@@ -393,11 +374,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/products/",
+							"raw": "{{stoom_url}}/api/products/",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"products",
@@ -414,11 +394,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/products/8",
+							"raw": "{{stoom_url}}/api/products/8",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"products",
@@ -435,11 +414,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/products/10",
+							"raw": "{{stoom_url}}/api/products/10",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"products",
@@ -456,12 +434,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/products/?active=true",
-							"protocol": "http",
+							"raw": "{{stoom_url}}/api/products/?active=true",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"products",
@@ -484,12 +460,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/products/category/2?active=true",
-							"protocol": "http",
+							"raw": "{{stoom_url}}/api/products/category/2?active=true",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"products",
@@ -513,12 +487,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/products/brand/4?active=false",
-							"protocol": "http",
+							"raw": "{{stoom_url}}/api/products/brand/4?active=false",
 							"host": [
-								"localhost"
+								"{{stoom_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"products",
@@ -538,6 +510,32 @@
 				}
 			],
 			"description": "EndPoint. referente aos produtos"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "stoom_url",
+			"value": "http://localhost:8080"
 		}
 	]
 }
