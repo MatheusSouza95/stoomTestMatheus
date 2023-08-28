@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  postgresql:
+    image: postgis/postgis
+    container_name: postgresql_postgis
+    volumes:
+      - ./data:/var/lib/postgresql
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"  

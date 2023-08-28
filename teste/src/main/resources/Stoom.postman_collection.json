@@ -1,0 +1,543 @@
+{
+	"info": {
+		"_postman_id": "0edee589-1dd9-4956-a4bb-9fc025561e42",
+		"name": "Stoom",
+		"description": "Teste Java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8339334"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "ListCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/categories/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								""
+							]
+						},
+						"description": "Lista todas as categorias"
+					},
+					"response": []
+				},
+				{
+					"name": "AddCategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n    {\n        \"name\": \"Category Exemple\",\n        \"description\": \"shirts exemple\",\n        \"active\": true\n    }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/categories/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								""
+							]
+						},
+						"description": "Adiciona uma categoria"
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCategory",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"name\": \"Category Exemple\",\n    \"description\": \"shirts exemple 2\",\n    \"active\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/categories/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								""
+							]
+						},
+						"description": "Atualiza Uma categoria"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCategory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/categories/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								"1"
+							]
+						},
+						"description": "Deleta uma categoria"
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/categories/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								"2"
+							]
+						},
+						"description": "Lista a categoria pelo id"
+					},
+					"response": []
+				},
+				{
+					"name": "ListActivesCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/categories/?active=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								""
+							],
+							"query": [
+								{
+									"key": "active",
+									"value": "true"
+								}
+							]
+						},
+						"description": "Lista as categorias ativas ou inativas"
+					},
+					"response": []
+				}
+			],
+			"description": "EndPoint. referente a categorias"
+		},
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "ListBrand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/brands/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"brands",
+								""
+							]
+						},
+						"description": "Lista todas as marcas"
+					},
+					"response": []
+				},
+				{
+					"name": "AddBrand",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n    {\n        \"name\": \"Category Exemple\",\n        \"description\": \"shirts exemple\",\n        \"active\": true\n    }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/categories/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								""
+							]
+						},
+						"description": "Adiciona uma marca"
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateBrand",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"name\": \"Category Exemple\",\n    \"description\": \"shirts exemple 2\",\n    \"active\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/categories/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								""
+							]
+						},
+						"description": "Atualiza uma marca"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteBrand",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/categories/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								"1"
+							]
+						},
+						"description": "Deleta uma marca"
+					},
+					"response": []
+				},
+				{
+					"name": "GetBrandById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/brands/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"brands",
+								"2"
+							]
+						},
+						"description": "Lista a marca pelo id"
+					},
+					"response": []
+				},
+				{
+					"name": "ListActivesBrand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/categories/?active=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								""
+							],
+							"query": [
+								{
+									"key": "active",
+									"value": "true"
+								}
+							]
+						},
+						"description": "Lista as marcas ativas ou inativas"
+					},
+					"response": []
+				}
+			],
+			"description": "EndPoint. referente as marcas"
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "ListProduct",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						},
+						"description": "Lista todas os produtos"
+					},
+					"response": []
+				},
+				{
+					"name": "AddProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"sku\": \"COD 133\",\n        \"name\": \"T-SHIRT 2\",\n        \"description\": \"TSHIRT P\",\n        \"stock\": \"4\",\n        \"active\": true,\n        \"category\": {\n            \"id\": 3\n        },\n        \"brand\": {\n            \"id\": 8\n        },\n        \"price\": 10.35\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						},
+						"description": "Adiciona um produto"
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProduct",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\n        \"id\": 10,\n        \"sku\": \"COD 133\",\n        \"name\": \"T-SHIRT 2\",\n        \"description\": \"TSHIRT PP\",\n        \"stock\": \"3\",\n        \"active\": false,\n        \"category\": {\n            \"id\": 2\n        },\n        \"brand\": {\n            \"id\": 4\n        },\n        \"price\": 10.35\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/products/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						},
+						"description": "Atualiza um produto"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProduct",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/products/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"8"
+							]
+						},
+						"description": "Deleta um produto"
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/products/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"10"
+							]
+						},
+						"description": "Lista o produto pelo id"
+					},
+					"response": []
+				},
+				{
+					"name": "ListActivesProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/?active=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								""
+							],
+							"query": [
+								{
+									"key": "active",
+									"value": "true"
+								}
+							]
+						},
+						"description": "Lista os produtos ativos ou inativos"
+					},
+					"response": []
+				},
+				{
+					"name": "ListProductsByCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/category/2?active=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"category",
+								"2"
+							],
+							"query": [
+								{
+									"key": "active",
+									"value": "true"
+								}
+							]
+						},
+						"description": "Lista os produtos ativos ou inativos de uma determinada categoria"
+					},
+					"response": []
+				},
+				{
+					"name": "ListProductsByBrand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/brand/4?active=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"brand",
+								"4"
+							],
+							"query": [
+								{
+									"key": "active",
+									"value": "false"
+								}
+							]
+						},
+						"description": "Lista os produtos ativos ou inativos de uma determinada marca"
+					},
+					"response": []
+				}
+			],
+			"description": "EndPoint. referente aos produtos"
+		}
+	]
+}
